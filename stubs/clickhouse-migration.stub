@@ -1,0 +1,20 @@
+<?php
+
+use App\Console\Commands\ClickHouse\Migration\AbstractClickHouseMigration;
+
+return new class extends AbstractClickHouseMigration
+{
+    public function up(): void
+    {
+        $this->client->write(<<<SQL
+
+        SQL);
+    }
+
+    public function down(): void
+    {
+        $this->client->write(<<<SQL
+
+        SQL);
+    }
+};
